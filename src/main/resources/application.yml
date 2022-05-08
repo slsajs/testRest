@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/szs
+    driver-class-name: org.h2.Driver
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    showSql: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jwt:
+    secret : szs874761254746287
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
